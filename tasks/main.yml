@@ -5,7 +5,7 @@
     update_cache: yes
     pkg:
       - jq
-      - netcat
+      - netcat-openbsd
       - libcap-dev
     state: present
 
@@ -18,9 +18,9 @@
 - name: Git clone alfred
   become: yes
   git:
-    repo: 'https://github.com/re4jh/alfred'
+    repo: https://git.open-mesh.org/alfred.git
     dest: /usr/src/alfred-{{batman_version}}/
-    version: v{{batman_version}}_ffbsee-patch
+    version: v{{batman_version}}
 
 - name: Build alfred
   become: yes
