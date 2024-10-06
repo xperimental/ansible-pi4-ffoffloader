@@ -15,10 +15,10 @@
 	url = https://github.com/DEvil0000/ansible-role-respondd-install.git
 [submodule "roles/fastd-install"]
 	path = roles/fastd-install
-	url = https://github.com/DEvil0000/ansible-role-fastd-install.git
+	url = https://github.com/xperimental/ansible-pi4-ffoffloader.git
 [submodule "roles/alfred-install"]
 	path = roles/alfred-install
-	url = https://github.com/DEvil0000/ansible-role-alfred-install.git
+	url = https://github.com/xperimental/ansible-pi4-ffoffloader.git
 [submodule "roles/batman-install"]
 	path = roles/batman-install
-	url = https://github.com/DEvil0000/ansible-role-batman-install.git
+	url = https://github.com/xperimental/ansible-pi4-ffoffloader.git

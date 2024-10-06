@@ -1,0 +1,23 @@
+---
+#TODO those names are very descriptive
+inbound_lan_interface: "eth0"
+outbound_lan_interface: "eth0"
+
+router_hardware: "Raspberry Pi 4B"
+router_contact: "xperimental@hacknology"
+respondd_wan: "{{ outbound_lan_interface }}"
+
+alfred_maplevel: all
+alfred_community: Bodensee
+alfred_router_latitude: 47.642942
+alfred_router_longitude: 9.188755
+alfred_router_version: 2.3.0
+alfred_router_name: Offloadertest
+alfred_router_contact: xperimental@hacknology
+alfred_router_autoupdater_enabled: false
+alfred_router_autoupdater_branch: none
+
+batman_version: "2024.2"
+
+hostapd_ssid: "Freifunk"
+hostapd_bridge: "br-ffbsee"
