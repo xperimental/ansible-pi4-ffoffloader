@@ -19,7 +19,7 @@
     update_cache: yes
     pkg:
       - dkms
-      - linux-kernel-headers
+      - linux-headers
       - ifupdown
     state: present
 
@@ -28,10 +28,8 @@
   unarchive:
     src: "{{ batman_download_url }}"
     dest: /usr/src/
-#    https://downloads.open-mesh.org/batman/stable/sources/batman-adv/batman-adv-2020.2.tar.gz.sha1
     remote_src: yes
 
-#TODO: TO-FIX this shold not be done like this
 - name: Remove missing link in Makefile
   become: yes
   shell: sed -i '/+= selinux/s/^/# /' /usr/src/linux-headers-*/scripts/Makefile
